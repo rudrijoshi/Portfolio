@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.icon {
+  font-size: 50px;
+  justify-content: space-between;
+}
+
+.inputForm {
+  padding-left: 24px;
+  width: 50rem;
+}
+
+.messageBox {
+  height: 21rem;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-fade {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-container:hover .image-fade {
+  opacity: 0.5s;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+}
+
+.github-icon-container {
+  margin-top: 10px;
+}
+
+.github-icon {
+  font-size: 5rem;
+  color: white;
+  background-color: black;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.image-container .imgSize {
+  max-width: 100%;
+  max-height: 100%;
+  width: 17rem;
+  height: 17rem;
+
+}
+
+.image-container {
+  display: inline-block;
+  flex-wrap: wrap;
+  flex-direction: block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
