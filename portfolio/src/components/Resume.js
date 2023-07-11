@@ -1,23 +1,33 @@
+import '../App.css';
+
+
 export default function Resume() {
     const onBtnClick = () => {
-        fetch('tech.pdf').then(response => {
-            response.blob().then(blob => {
+        fetch('techsupres1.pdf')
+            .then(response => response.blob())
+            .then(blob => {
                 const Url = window.URL.createObjectURL(blob);
-                let link = document.createElement('a');
+                const link = document.createElement('a');
                 link.href = Url;
-                link.download = 'tech.pdf';
+                link.download = 'techsupres1.pdf';
                 link.click();
+                window.URL.revokeObjectURL(Url);
             })
-        })
+            .catch(error => {
+                console.error('Failed to download the file:', error);
+            })
+
     }
     return (
-        <div>
+        <div class="resumeEdit bg-warning p-2 text-dark bg-opacity-25">
             <iframe
                 src={require(`../assets/techsupres1.pdf`)}
                 title="Resume"
-                className="resume"
+                className="resume1"
             />
-            <button className="resume" onClick={onBtnClick}>Download my Resume</button>
+            <br>
+            </br>
+            <button className="resume btn btn-primary btn-lg" type="button" onClick={onBtnClick}>Download my Resume</button>
         </div>
     )
 };

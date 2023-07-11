@@ -55,7 +55,7 @@ function Form() {
     };
 
     return (
-        <div>
+        <div class="bg-warning text-dark bg-opacity-25">
             <h3 class="p-4">Contact</h3>
             <form className="form inputForm">
                 <div class="mb-3">

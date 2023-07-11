@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div>
+        <div class="bg-warning p-2 text-dark bg-opacity-25">
             <h1 class="p-4 mb-4">
                 About Me
             </h1>

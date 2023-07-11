@@ -50,7 +50,7 @@ function Portfolio() {
 
     // for each project, use the Project component to build a project
     return (
-        <div>
+        <div class="projectEdit bg-warning p-2 text-dark bg-opacity-25">
             <div className="d-flex">
                 {projects.map((project) => (
                     <Project project={project} key={"project=" + project.name} />
