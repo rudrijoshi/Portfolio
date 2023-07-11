@@ -38,9 +38,7 @@ You’ll deploy this application to GitHub Pages. Follow the instructions in the
 
 ## Links
 
-- The URL of the GitHub deployed application:
+- The URL of the GitHub deployed application: https://rudrijoshi.github.io/Portfolio
 
-- The URL of the GitHub repository: 
+- The URL of the GitHub repository: https://github.com/rudrijoshi/Portfolio
 
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
