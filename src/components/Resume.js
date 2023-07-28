@@ -19,14 +19,8 @@ export default function Resume() {
 
     }
     return (
-        <div className="resumeEdit bg-warning p-2 text-dark bg-opacity-25">
-            <iframe
-                src={require(`../assets/techsupres1.pdf`)}
-                title="Resume"
-                className="resume1"
-            />
-            <br>
-            </br>
+        <div className="resumeEdit p-2 text-dark">
+            <br />
             <button className="resume btn btn-primary btn-lg" type="button" onClick={onBtnClick}>Download my Resume</button>
         </div>
     )

@@ -3,17 +3,17 @@ import '../style/style.css';
 
 export default function About() {
     return (
-        <div className="bg-purple-800 p-2 text-dark bg-opacity-25">
-            <h1 className="p-4 mb-4">
+        <div className="text-white text-center">
+            <h1 className="p-4 mb-4 ">
                 About Me
             </h1>
-            <div>
+            {/* <div>
                 <img
                     src={require(`../assets/avatar.png`)}
                     alt="avatar"
-                    className="p-4 mb-4"
+                    className="p-4 mb-4 items-center"
                 />
-            </div>
+            </div> */}
 
 
             <h3 className="p-4">

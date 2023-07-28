@@ -55,7 +55,7 @@ function Form() {
     };
 
     return (
-        <div className="bg-warning text-dark bg-opacity-25">
+        <div className="text-white justify-center">
             <h3 className="p-4">Contact</h3>
             <form className="form inputForm">
                 <div className="mb-3">
@@ -68,13 +68,13 @@ function Form() {
                         onBlur={handleValidation}
                         type="email"
                         placeholder="email"
-                        class="form-control"
+                        className="form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                     />
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
-                <div class="mb-3">
+                <div className="mb-3">
                     <label for="exampleInputName1" class="form-label">Name</label>
                     <input
                         value={userName}
@@ -87,7 +87,7 @@ function Form() {
                         id="exampleInputName1"
                     />
                 </div>
-                <div class="mb-3">
+                <div className="mb-3">
                     <label for="exampleInputName1" class="form-label">Message</label>
                     <textarea
                         value={message}
@@ -107,7 +107,7 @@ function Form() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button type="button" class="btn btn-primary" onClick={handleFormSubmit}>Submit</button>
+                <button type="button" className="btn btn-primary" onClick={handleFormSubmit}>Submit</button>
             </form>
 
         </div>
