@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.a0852fc2.css",
+    "main.js": "/Portfolio/static/js/main.79ec7677.js",
+    "static/media/techsupres1.pdf": "/Portfolio/static/media/techsupres1.c521a0dfafee8f1a55e7.pdf",
+    "static/media/project1.png": "/Portfolio/static/media/project1.c6abe06326e490102221.png",
+    "static/media/asgn4.jpg": "/Portfolio/static/media/asgn4.f0dd2ff54b18f46910ff.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.a0852fc2.css.map": "/Portfolio/static/css/main.a0852fc2.css.map",
+    "main.79ec7677.js.map": "/Portfolio/static/js/main.79ec7677.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0852fc2.css",
+    "static/js/main.79ec7677.js"
+  ]
+}
