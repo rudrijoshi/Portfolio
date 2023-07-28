@@ -1,4 +1,4 @@
-import '../App.css';
+import '../style/style.css';
 
 
 export default function Resume() {
@@ -19,7 +19,7 @@ export default function Resume() {
 
     }
     return (
-        <div class="resumeEdit bg-warning p-2 text-dark bg-opacity-25">
+        <div className="resumeEdit bg-warning p-2 text-dark bg-opacity-25">
             <iframe
                 src={require(`../assets/techsupres1.pdf`)}
                 title="Resume"

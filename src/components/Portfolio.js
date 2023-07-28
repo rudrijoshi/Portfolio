@@ -1,5 +1,5 @@
 import Project from "../components/Project";
-import '../App.css';
+import '../style/style.css';
 
 function Portfolio() {
     // fill in the required data, image file should be in the assets folder and name should match exactly including extension
@@ -50,7 +50,7 @@ function Portfolio() {
 
     // for each project, use the Project component to build a project
     return (
-        <div class="projectEdit bg-warning p-2 text-dark bg-opacity-25">
+        <div className="projectEdit bg-warning p-2 text-dark bg-opacity-25">
             <div className="d-flex">
                 {projects.map((project) => (
                     <Project project={project} key={"project=" + project.name} />

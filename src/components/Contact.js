@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // Here we import a helper function that will check if the email is valid
 import { validateEmail } from '../utils/helpers';
-import '../App.css';
+import '../style/style.css';
 
 function Form() {
     // Create state variables for the fields in the form
@@ -55,11 +55,11 @@ function Form() {
     };
 
     return (
-        <div class="bg-warning text-dark bg-opacity-25">
-            <h3 class="p-4">Contact</h3>
+        <div className="bg-warning text-dark bg-opacity-25">
+            <h3 className="p-4">Contact</h3>
             <form className="form inputForm">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <div className="mb-3">
+                    <label for="exampleInputEmail1" className="form-label">Email address</label>
 
                     <input
                         value={email}

@@ -1,4 +1,4 @@
-import '../App.css';
+import '../style/style.css';
 import { FaGithub } from 'react-icons/fa';
 
 
@@ -8,7 +8,7 @@ function Project({ project }) {
 
     return (
         <div className="tab-content">
-            <div class="image-container">
+            <div className="image-container">
                 <img
                     src={require(`../assets/${image}`)}
                     alt={name}

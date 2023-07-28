@@ -1,19 +1,22 @@
+import '../style/style.css';
+
+
 export default function About() {
     return (
-        <div class="bg-warning p-2 text-dark bg-opacity-25">
-            <h1 class="p-4 mb-4">
+        <div className="bg-purple-800 p-2 text-dark bg-opacity-25">
+            <h1 className="p-4 mb-4">
                 About Me
             </h1>
             <div>
                 <img
                     src={require(`../assets/avatar.png`)}
                     alt="avatar"
-                    class="p-4 mb-4"
+                    className="p-4 mb-4"
                 />
             </div>
 
 
-            <h3 class="p-4">
+            <h3 className="p-4">
                 <p>
                     I am a web developer with expertise in HTML, CSS and Javascript. I have experience building responsive and user-friendly web applications using these technologies. I have also worked extensively with the MERN stack, which includes MongoDB, Express.js, React and Node.js to develop full-stack applocations.
                 </p>
