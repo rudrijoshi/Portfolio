@@ -4,10 +4,12 @@ import '../style/style.css';
 
 export default function Footer() {
     return (
-        <div className="items-center footer flex justify-center h-35 items-center space-y-10 grid gap-4 grid-cols-3 grid-rows-1">
-            <a href="https://github.com/"><FaGithub className="icon" /></a>
-            <a href="https://www.linkedin.com/"><FaLinkedin className="icon" /></a>
-            <a href="https://stackoverflow.co/"><FaStackOverflow className="icon" /></a>
+        <div className="footer flex justify-center h-14">
+            <div className="icon-container grid grid-cols-3 gap-4 sm:gap-4 px-4 sm:px-5">
+                <a href="https://github.com/"><FaGithub className="icon" /></a>
+                <a href="https://www.linkedin.com/"><FaLinkedin className="icon" /></a>
+                <a href="https://stackoverflow.co/"><FaStackOverflow className="icon" /></a>
+            </div>
         </div>
     )
 };

@@ -22,9 +22,9 @@ export default function Resume() {
     }
     return (
         <div className="Skill p-2 text-white text-center">
-            <h1 className="pb-40">My Skiils </h1>
-            <div className="grid grid-cols-4 gap-5 place-items-center pb-44">
-                {skills.map((skill) => (<div key={skill.id} className="flex flex-row items-center p-1 border-solid border-4 rounded-md text-lg bg-cyan-800">
+            <h1 className="pb-8 md:pb-40">My Skiils </h1>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 place-items-center pb-8 md:pb-44 skill-container">
+                {skills.map((skill) => (<div key={skill.id} className="skill-box flex flex-row items-center p-1 border-solid border-4 rounded-md text-lg bg-cyan-800">
                     <span key={skill.id} className="p-4">
                         {skill.title}
                     </span>

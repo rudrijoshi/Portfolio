@@ -3,7 +3,7 @@ import '../style/style.css';
 
 export default function About() {
     return (
-        <div className="text-white text-center">
+        <div className="text-center">
             <h1 className="p-4 mb-4 ">
                 About Me
             </h1>

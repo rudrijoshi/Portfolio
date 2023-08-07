@@ -24,7 +24,7 @@ code {
     margin: 0;
     min-width: 100%;
     min-height: 100vh;
-    color: #dfbff7;
+    color: #d2f0cb;
 }
 
 * {
@@ -161,9 +161,10 @@ code {
 
 .title {
     padding: 35px;
-    color: #faf5ff;
+    color: #deefa9;
     font-size: 55px;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .nav {
@@ -174,7 +175,15 @@ code {
 
 .footer {
     background-image: linear-gradient(90deg, #610ee6 35%, #8a2af0 55%, #986bf0 80%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
+.icon {
+    width: 45rem;
+    height: 3rem;
+    padding-bottom: 1rem;
 }
 
 .form-control {
@@ -197,4 +206,27 @@ header {
     min-width: 100%;
     min-height: 100vh;
     min-height: 100%;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    /* Adjust the gap between skill boxes as needed */
+}
+
+.skill-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+    /* Set the width of each skill box */
+    height: 8rem;
+    /* Set the height of each skill box */
+    border-radius: 8px;
+    /* Add rounded corners to each skill box */
+    font-size: 16px;
+    /* Set the font size for the text inside the skill box */
+    font-weight: bold;
+    /* Optionally set the font weight */
 }

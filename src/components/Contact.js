@@ -1,9 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 // Here we import a helper function that will check if the email is valid
 import { validateEmail } from '../utils/helpers';
 import '../style/style.css';
+import emailjs from 'emailjs-com';
+
+
 
 function Form() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_USER_ID)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            })
+    };
     // Create state variables for the fields in the form
     // We are also setting their initial values to an empty string
     const [email, setEmail] = useState('');
@@ -52,14 +67,16 @@ function Form() {
         setUserName('');
         setMessage('');
         setEmail('');
+        setErrorMessage('');
+        sendEmail(e);
     };
 
     return (
-        <div className="text-white justify-center">
+        <div className="px-5 text-white justify-center py-5">
             <h3 className="p-4">Contact</h3>
-            <form className="form inputForm">
+            <form className="form inputForm" ref={form} onSubmit={sendEmail}>
                 <div className="mb-3">
-                    <label for="exampleInputEmail1" className="form-label">Email address</label>
+                    <label htmlFor="email" className="form-label">Email address</label>
 
                     <input
                         value={email}
@@ -75,7 +92,7 @@ function Form() {
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div className="mb-3">
-                    <label for="exampleInputName1" class="form-label">Name</label>
+                    <label htmlFor="userName" class="form-label">Name</label>
                     <input
                         value={userName}
                         name="userName"
@@ -88,7 +105,7 @@ function Form() {
                     />
                 </div>
                 <div className="mb-3">
-                    <label for="exampleInputName1" class="form-label">Message</label>
+                    <label htmlFor="message" class="form-label">Message</label>
                     <textarea
                         value={message}
                         name="message"
