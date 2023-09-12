@@ -17,12 +17,14 @@ function Project({ project }) {
                 <div className="image-overlay">
                     <div className="overlay-content">
                         <a href={link}>{name}</a>{' '}
-                        <p>{description}</p>
+                        <p className='desc'>{description}</p>
                         <h3>
                             <a href={repo}>
 
                                 <div className="github-icon-container">
-                                    <FaGithub className="github-icon" />
+                                    <div className="github-icon-wrapper">
+                                        <FaGithub className="github-icon" />
+                                    </div>
                                 </div>
                             </a>{' '}
                         </h3>

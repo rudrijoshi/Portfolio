@@ -5,53 +5,67 @@ function Portfolio() {
     // fill in the required data, image file should be in the assets folder and name should match exactly including extension
     const projects = [
         {
-            name: "Project 1 (Please click here to view deployed link)",
-            description: "The Horiseon Webpage Project",
-            link: " https://rudrijoshi.github.io/Assignment1/",
-            repo: "https://github.com/rudrijoshi/Assignment1",
-            image: "asgn1.jpg",
+            name: "The Horiseon Webpage Project (Deployed link)",
+            description: "Revamped a marketing agency's webpage for enhanced accessibility and SEO, improving user experience and discoverability.",
+            link: "https://rudrijoshi.github.io/Horiseon_webpage/",
+            repo: "https://github.com/rudrijoshi/Horiseon_webpage/",
+            image: "webpage.jpg",
         },
         {
-            name: "Project 2 (Please click here to view deployed link)",
-            description: "SVG Logo Project",
+            name: "SVG Logo Project (Deployed link)",
+            description: "User-friendly web app generates SVG logos by prompting user questions. User input creates logo in logo.svg file. Includes example logos for simplicity.",
             link: "https://rudrijoshi.github.io/SVGlogoproject1/",
             repo: "https://github.com/rudrijoshi/SVGlogoproject1",
-            image: "asgn2.jpg",
+            image: "svg.png",
         },
         {
-            name: "Project 3 (Please click here to view deployed link)",
-            description: "Social Network Api Project",
+            name: "Social Network Api Project (Deployed link)",
+            description: "Built a social network API for sharing thoughts, reactions, and friend lists. Utilized MongoDB for data speed and flexibility. Project showcases API structure with a demo video.",
             link: "https://rudrijoshi.github.io/Social-Network-Api-project/",
             repo: "https://github.com/rudrijoshi/Social-Network-Api-project",
-            image: "asgn3.jpg",
+            image: "socialn.jpg",
         },
         {
-            name: "Project 4 (Please click here to view deployed link)",
-            description: "The Tech Blog Project",
+            name: "The Tech Blog Project (Deployed link)",
+            description: "User-friendly web app for developers to read and write about tech topics. Built as a CMS-style blog site, akin to WordPress, enabling blog publishing and commenting.",
             link: "https://rudrijoshi.github.io/The-Tech-Blog-Project/",
             repo: "https://github.com/rudrijoshi/The-Tech-Blog-Project",
-            image: "asgn4.jpg",
+            image: "blog.jpg",
         },
         {
-            name: "Project 5 (Please click here to view deployed link)",
-            description: "Give Hope",
-            link: " https://powerful-oasis-64063-6b2a0502a18f.herokuapp.com/",
-            repo: "https://github.com/dylansth/give-hope",
-            image: "asgn5.jpg",
+            name: "COTER (Deployed link)",
+            description: "Created a developer network, promoting communication and supporting newcomers using various libraries, Express.js, and third-party APIs.",
+            link: "https://coter-app-ead89d3057b0.herokuapp.com/",
+            repo: "https://github.com/miladesmailpour/COTER",
+            image: "codeQuote.jpg",
         },
         {
-            name: "Project 6 (Please click here to view deployed link)",
-            description: "PWA Text Editor",
+            name: "PWA Text Editor (Deployed link)",
+            description: "A browser-based PWA text editor with robust data storage, offline functionality, and endorsed by Google and Mozilla",
             link: "https://rudrijoshi.github.io/PWAtexteditor/",
             repo: "https://github.com/rudrijoshi/PWAtexteditor",
-            image: "asgn.jpg",
-        }
+            image: "pwa.png",
+        },
+        {
+            name: "Code Quiz Project(Deployed link)",
+            description: "Web app for coding boot camp students and enthusiasts to test JavaScript knowledge through timed quizzes and high score tracking.",
+            link: "https://rudrijoshi.github.io/Code_quiz/",
+            repo: "https://github.com/rudrijoshi/Code_quiz",
+            image: "asgnq.jpg",
+        },
+        {
+            name: "Password Generator Project (Deployed link)",
+            description: "Customizable tool for creating strong, secure passwords. Tailor length, character types, and more through prompts, and generate your password for immediate use.",
+            link: "https://rudrijoshi.github.io/Password_generator/",
+            repo: "https://github.com/rudrijoshi/Password_generator/",
+            image: "password.jpg",
+        },
     ];
 
     // for each project, use the Project component to build a project
     return (
-        <div className="flex justify-content-center justify-between py-14">
-            <div className="grid grid-cols-2 gap-10 content-start p-2">
+        <div className="flex justify-content-center py-14">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-40 content-start p-2">
                 {projects.map((project) => (
                     <Project project={project} key={"project=" + project.name} />
                 ))}

@@ -72,10 +72,10 @@ function Form() {
     };
 
     return (
-        <div className="px-5 text-white justify-center py-5">
-            <h3 className="p-4">Contact</h3>
+        <div className="px-5 justify-center align-center sm:px-10 py-5">
+            <h3 className="text-xl md:text-3xl p-4">Contact</h3>
             <form className="form inputForm" ref={form} onSubmit={sendEmail}>
-                <div className="mb-3">
+                <div className="mb-4">
                     <label htmlFor="email" className="form-label">Email address</label>
 
                     <input
@@ -85,14 +85,14 @@ function Form() {
                         onBlur={handleValidation}
                         type="email"
                         placeholder="email"
-                        className="form-control"
+                        className={`mt-1 p-2 rounded-md ${errorMessage ? 'border-red-500' : 'border-gray-300'} focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm form-control`}
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                     />
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <div id="emailHelp" className="text-sm text-gray-500 form-text">We'll never share your email with anyone else.</div>
                 </div>
-                <div className="mb-3">
-                    <label htmlFor="userName" class="form-label">Name</label>
+                <div className="mb-4">
+                    <label htmlFor="userName" clasNames="block text-sm font-medium text-gray-700 form-label">Name</label>
                     <input
                         value={userName}
                         name="userName"
@@ -100,12 +100,12 @@ function Form() {
                         onBlur={handleValidation}
                         type="text"
                         placeholder="username"
-                        class="form-control"
+                        className={`mt-1 p-2 rounded-md ${errorMessage ? 'border-red-500' : 'border-gray-300'} focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm form-control`}
                         id="exampleInputName1"
                     />
                 </div>
-                <div className="mb-3">
-                    <label htmlFor="message" class="form-label">Message</label>
+                <div className="mb-4">
+                    <label htmlFor="message" className="form-label">Message</label>
                     <textarea
                         value={message}
                         name="message"
@@ -113,7 +113,7 @@ function Form() {
                         onBlur={handleValidation}
                         type="text"
                         placeholder="Enter a message"
-                        class="form-control messageBox"
+                        className={`mt-1 p-2 rounded-md ${errorMessage ? 'border-red-500' : 'border-gray-300'} focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm form-control messageBox`}
                         id="exampleInputMessage1"
                     >
 
@@ -121,10 +121,10 @@ function Form() {
                 </div>
                 {errorMessage && (
                     <div>
-                        <p className="error-text">{errorMessage}</p>
+                        <p className="text-red-500 text-sm error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button type="button" className="btn btn-primary" onClick={handleFormSubmit}>Submit</button>
+                <button type="button" className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded btn btn-primary" onClick={handleFormSubmit}>Submit</button>
             </form>
 
         </div>
