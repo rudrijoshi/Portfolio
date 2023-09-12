@@ -16,25 +16,68 @@ This is a React-based portfolio application that allows you to showcase your ski
 
 What are the steps required to install this portfolio?
 
-- Provided step by step description on how to get the development of environment running.
-- Installed npm using npm init to initiate the npm
-- After that added libraries like bootstrap, axios, pretty, and also ran npx create-react-app portfolio in terminal to create the react app.
-- Moreover, added devDependencies like eslint to package.json and run the application with the command npm start.
+Clone the Repository:
+- Open your command line interface (CLI) or terminal.
+- Navigate to the directory where you want to store the portfolio project.
+- Run the following command to clone the repository:
+- git clone https://github.com/rudrijoshi/Portfolio.git
+
+Navigate to the Project Directory:
+- Change your working directory to the newly created "Portfolio" directory:
+- cd Portfolio
+
+Install Dependencies:
+- Ensure you have Node.js and npm (Node Package Manager) installed on your system.
+- Once Node.js and npm are installed, run the following command to install the project's dependencies:
+- npm install
+
+Environment Variables:
+- Create a .env file in the project's root directory.
+- Add any necessary environment variables as specified in the project, typically including API keys, secrets, or other configuration details.
+
+Run the Portfolio:
+- After installing the dependencies and setting up the environment variables, you can start the development server by running:
+- npm start
+- This will start the portfolio application locally, and you can access it in your web browser at http://localhost:3000.
+
+Build for Deployment:
+- When you're ready to deploy the portfolio, you can build it using:
+- npm run build
+- This will create an optimized production build of your portfolio in the build directory.
+
+Deploy to GitHub Pages (Optional):
+- If you want to host your portfolio on GitHub Pages, you can use the following command:
+- npm run deploy
+- This command deploys the contents of the build directory to the GitHub Pages branch specified in your package
+json file.
+
+Access the Portfolio Online:
+- If you deployed your portfolio to GitHub Pages, you can access it using the URL specified in the homepage field
+of your package.json file: https://rudrijoshi.github.io/Portfolio.
+- That's it! You've successfully installed and deployed the portfolio project. You can now customize it to showcase
+your work and personal information.
+
 
 ## Usage
 
-Screenshot of React portfolio
+Screenshot of My Portfolio
 
-![Screenshot of React portfolio](/Assets/screenshot.png)
+![Screenshot of React portfolio](/Assets/portfolio.png)
 
-Being a web developer means being part of a community. You’ll need a place not only to share your projects while you're applying for jobs or working as a freelancer but also to share your work with other developers and collaborate on projects.
+Embracing the role of a web developer encompasses more than just technical proficiency; it's about becoming an
+integral part of a thriving community. In this digital age, having an online presence serves a dual purpose: not
+only does it provide a platform to showcase my projects when pursuing job opportunities or freelancing, but it also
+serves as a hub for connecting with fellow developers and fostering collaborative endeavors.
 
-Your task is to create a portfolio using your new React skills, which will help set you apart from other developers whose portfolios don’t use the latest technologies. 
+My mission is to craft a dynamic portfolio utilizing my freshly acquired React skills, a decision that sets me
+apart from other developers who may not be leveraging the latest technologies in their portfolios. This innovative
+approach underscores my commitment to staying at the forefront of web development, enhancing not only my own
+prospects but also contributing to the collective growth and innovation within the web development community.
 
-You’ll deploy this application to GitHub Pages. Follow the instructions in the Git Guide or consult the [Create React App Docs on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) to create a build that you can deploy.
+## Credit
 
-**Important**: Be sure to push your codebase to the default branch in GitHub -- NOT your built and deployed code. Ensure this happens by using the `gh-pages` branch to host the deployed application's build.
-
+I turned to the instructional materials offered on https://www.w3schools.com/ for comprehensive guidance, relying
+on their expertise to refine the project's quality and precision.
 
 ## Links
 
