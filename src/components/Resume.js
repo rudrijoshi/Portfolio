@@ -5,11 +5,11 @@ import React from 'react';
 
 export default function Resume() {
     const onBtnClick = () => {
-        const resumePath = '/resume1.pdf';
+        const resumePath = '/resume.pdf';
         const resumeURL = process.env.PUBLIC_URL + resumePath;
         const link = document.createElement('a');
         link.href = resumeURL;
-        link.download = 'resume1.pdf';
+        link.download = 'resume.pdf';
         link.click();
     }
     return (
