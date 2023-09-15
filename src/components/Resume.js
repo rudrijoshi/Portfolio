@@ -5,20 +5,12 @@ import React from 'react';
 
 export default function Resume() {
     const onBtnClick = () => {
-        fetch('techsupres1.pdf')
-            .then(response => response.blob())
-            .then(blob => {
-                const Url = window.URL.createObjectURL(blob);
-                const link = document.createElement('a');
-                link.href = Url;
-                link.download = 'techsupres1.pdf';
-                link.click();
-                window.URL.revokeObjectURL(Url);
-            })
-            .catch(error => {
-                console.error('Failed to download the file:', error);
-            })
-
+        const resumePath = '/resume1.pdf';
+        const resumeURL = process.env.PUBLIC_URL + resumePath;
+        const link = document.createElement('a');
+        link.href = resumeURL;
+        link.download = 'resume1.pdf';
+        link.click();
     }
     return (
         <div className="Skill p-5 text-center">

@@ -3,11 +3,14 @@ import { FaGithub } from 'react-icons/fa';
 
 
 function Project({ project }) {
-    const { name, repo, link, description, image } = project;
+    const { name, repo, link, description, image, technologies } = project;
 
 
     return (
         <div className="tab-content">
+            <div className= "technology-container">
+                <p className="technology">Technology used: {technologies}</p>
+            </div>
             <div className="image-container">
                 <img
                     src={require(`../assets/${image}`)}
@@ -26,7 +29,7 @@ function Project({ project }) {
                                         <FaGithub className="github-icon" />
                                     </div>
                                 </div>
-                            </a>{' '}
+                            </a>
                         </h3>
 
                     </div>

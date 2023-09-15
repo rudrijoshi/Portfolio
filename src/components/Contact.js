@@ -124,6 +124,10 @@ function Form() {
                         <p className="text-red-500 text-sm error-text">{errorMessage}</p>
                     </div>
                 )}
+                <div className="bold-text">
+                    Feel free to reach me at my email address rudrijoshi20@gmail.com
+                </div>
+                <br />
                 <button type="button" className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded btn btn-primary" onClick={handleFormSubmit}>Submit</button>
             </form>
 
